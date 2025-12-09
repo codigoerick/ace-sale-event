@@ -1,0 +1,398 @@
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #121212;
+   /* Dark background */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   color: #e0e0e0;
+   /* Light text */
+}
+
+.card {
+   background-color: #1e1e1e;
+   /* Dark card background */
+   border-radius: 15px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+   padding: 20px;
+   width: 90%;
+   max-width: 900px;
+   /* Increased width */
+   text-align: center;
+}
+
+/* ... existing styles ... */
+
+.reward-item {
+   background-color: transparent;
+   /* Removed white background */
+   border: none;
+   /* Removed border */
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-width: 60px;
+}
+
+.card-title {
+   font-size: 1.8em;
+   margin-bottom: 5px;
+   color: #ffffff;
+}
+
+.card-subtitle {
+   font-size: 1.3em;
+   color: #bbb;
+   margin-bottom: 20px;
+   font-weight: normal;
+}
+
+/* Day Selector */
+.day-selector {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   margin-bottom: 20px;
+   flex-wrap: wrap;
+}
+
+.day-btn {
+   background-color: #444;
+   /* Lighter background for visibility */
+   border: 1px solid #555;
+   /* Add border for definition */
+   padding: 8px 16px;
+   border-radius: 20px;
+   cursor: pointer;
+   font-weight: bold;
+   color: #ffffff;
+   /* White text */
+   transition: all 0.3s;
+   margin: 5px;
+   /* Ensure spacing if wrapped */
+}
+
+.day-btn.active,
+.day-btn:hover {
+   background-color: #ff9800;
+   border-color: #ff9800;
+   color: #121212;
+   /* Dark text on active */
+   box-shadow: 0 0 10px rgba(255, 152, 0, 0.4);
+   /* Glow effect */
+}
+
+.carousel-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+   margin-bottom: 30px;
+}
+
+.carousel-container {
+   width: 100%;
+   overflow: hidden;
+   /* Ensures we only see one slide */
+   display: flex;
+   justify-content: center;
+}
+
+.carousel-slide {
+   display: none;
+   /* Hide all slides by default */
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   animation: fadeEffect 0.5s;
+   /* Add a fade effect */
+}
+
+.carousel-slide.active {
+   display: flex;
+   /* Show the active slide */
+}
+
+@keyframes fadeEffect {
+   from {
+      opacity: 0.4
+   }
+
+   to {
+      opacity: 1
+   }
+}
+
+/* Grid for items inside a card */
+.items-grid {
+   display: flex;
+   gap: 15px;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 10px;
+}
+
+.item-wrapper {
+   position: relative;
+   width: 100px;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+.item-bg {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: 1;
+}
+
+.item-img {
+   position: relative;
+   width: 60%;
+   height: 60%;
+   object-fit: contain;
+   z-index: 2;
+}
+
+.item-info {
+   text-align: center;
+   margin-top: 5px;
+   display: flex;
+   flex-direction: column;
+}
+
+.item-count {
+   font-weight: 800;
+   color: #ffffff;
+   font-size: 1.1em;
+   /* White text with black border/shadow effect */
+   text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000,
+      2px 2px 4px rgba(0, 0, 0, 0.8);
+   margin-top: 5px;
+}
+
+.slide-content {
+   background-color: #2c2c2c;
+   /* Dark slide background */
+   width: 90%;
+   /* Responsive width relative to container */
+   max-width: 600px;
+   /* Increased to fit 4 items in a row */
+   height: auto;
+   min-height: 200px;
+   padding: 15px;
+   border-radius: 12px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.item-icon {
+   font-size: 3em;
+   margin-bottom: 10px;
+}
+
+.reward-count {
+   font-weight: 800;
+   color: #ffffff;
+   font-size: 0.9em;
+   text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000,
+      2px 2px 4px rgba(0, 0, 0, 0.8);
+   margin-top: 5px;
+   z-index: 10;
+}
+
+.item-details {
+   display: flex;
+   gap: 10px;
+   font-size: 1.2em;
+   align-items: center;
+}
+
+
+.nav-btn {
+   background-color: #444;
+   color: white;
+   border: none;
+   padding: 10px 15px;
+   cursor: pointer;
+   border-radius: 5px;
+   font-size: 1.2em;
+   user-select: none;
+   transition: background 0.3s;
+}
+
+.nav-btn:hover {
+   background-color: #666;
+}
+
+.bottom-container {
+   background-color: #1e1e1e;
+   /* Match card or slightly different */
+   padding: 10px;
+   border-radius: 12px;
+   text-align: center;
+   margin-top: 30px;
+   border: 1px solid #333;
+   min-height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.2em;
+   flex-direction: column;
+   gap: 15px;
+}
+
+/* Image Icon Styling */
+.icon-img {
+   width: 50px;
+   height: 50px;
+   object-fit: contain;
+}
+
+.item-icon .icon-img {
+   width: 80px;
+   /* Larger in the carousel */
+   height: 80px;
+}
+
+.reward-icon .icon-img {
+   width: 40px;
+   /* Smaller in rewards */
+   height: 40px;
+}
+
+/* Rewards Styling Updated */
+.reward-wrapper {
+   position: relative;
+   width: 100px;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+.reward-bg {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: 1;
+}
+
+.reward-img {
+   position: relative;
+   width: 60%;
+   height: 60%;
+   object-fit: contain;
+   z-index: 2;
+}
+
+.rewards-container {
+   display: flex;
+   gap: 15px;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.reward-icon {
+   font-size: 1.5em;
+   margin-bottom: 5px;
+}
+
+.reward-name {
+   font-size: 0.8em;
+   color: #555;
+}
+
+/* Responsive Design */
+
+/* Tablet (max-width: 900px) */
+@media (max-width: 900px) {
+   .card {
+      width: 95%;
+      padding: 15px;
+   }
+
+   .slide-content {
+      max-width: 100%;
+   }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+   .card-title {
+      font-size: 1.5em;
+   }
+
+   .card-subtitle {
+      font-size: 1.1em;
+   }
+
+   /* Smaller Items */
+   .item-wrapper,
+   .reward-wrapper {
+      width: 70px;
+      height: 70px;
+   }
+
+   .item-count,
+   .reward-count {
+      font-size: 0.8em;
+   }
+
+   .icon-img {
+      width: 40px;
+      height: 40px;
+   }
+
+   .item-icon .icon-img {
+      width: 60px;
+      height: 60px;
+   }
+
+   /* Compact Navigation */
+   .nav-btn {
+      padding: 8px 10px;
+      font-size: 1em;
+   }
+
+   .carousel-wrapper {
+      gap: 5px;
+   }
+
+   .slide-content {
+      padding: 10px;
+      min-height: auto;
+   }
+
+   .bottom-container {
+      padding: 15px;
+      margin-top: 20px;
+   }
+
+   .day-btn {
+      padding: 6px 12px;
+      font-size: 0.9em;
+   }
+}
