@@ -242,49 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 1000);
    }
 
-   function renderCostTable() {
-      const tbody = document.querySelector('#costTable tbody');
-      if (!tbody) return;
-      tbody.innerHTML = '';
-
-      // Define rows structure
-      const rows = [
-         { label: "Pack 1 (Coste)", key: "pack1", subkey: "cost" },
-         { label: "Pack 1 (Valor)", key: "pack1", subkey: "value" },
-         { label: "Pack 2 (Coste)", key: "pack2", subkey: "cost" },
-         { label: "Pack 2 (Valor)", key: "pack2", subkey: "value" },
-         { label: "Pack 3 (Coste)", key: "pack3", subkey: "cost" },
-         { label: "Pack 3 (Valor)", key: "pack3", subkey: "value" },
-         { label: "TOTAL (Coste)", key: "total", subkey: "cost" },
-         { label: "TOTAL (Valor)", key: "total", subkey: "value" }
-      ];
-
-      rows.forEach(row => {
-         const tr = document.createElement('tr');
-         let html = `<td>${row.label}</td>`;
-
-         // Iterate through days 1 to 5 (assuming eventData has them in order or by ID)
-         // We'll trust eventData index 0 is Day 1, etc.
-         // Or loop 0 to 4 explicitly for safety if data length varies but User wants 5 cols?
-         // User requested specific column headers Day 1-5.
-
-         for (let i = 0; i < 5; i++) {
-            let cellData = "-";
-            if (eventData[i] && eventData[i].costs) {
-               const costObj = eventData[i].costs[row.key];
-               if (costObj) {
-                  cellData = costObj[row.subkey];
-               }
-            }
-            html += `<td>${cellData}</td>`;
-         }
-         tr.innerHTML = html;
-         tbody.appendChild(tr);
-      });
-   }
-
    // Initialize
-   renderCostTable(); // Render table
    selectDay(currentRealPeriodIndex); // Start viewing current day
    startTimer();
 });

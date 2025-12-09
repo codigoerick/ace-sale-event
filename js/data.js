@@ -46,13 +46,7 @@ window.eventData = [
                { name: "Pet", count: "x 1", img: "images/items/day1/esp3/pet_choose_7.png", bg: "images/bg/yellow-bg.png" }
             ]
          }
-      ],
-      costs: {
-         pack1: { cost: "3800", value: "4100" },
-         pack2: { cost: "5934", value: "5100" },
-         pack3: { cost: "9600", value: "6950" },
-         total: { cost: "19334", value: "16150" }
-      }
+      ]
    },
    // Day 2
    {
@@ -100,14 +94,8 @@ window.eventData = [
                { name: "Frag", count: "x 1", img: "images/items/day2/esp3/selectBox_petAwaken.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet", count: "x 1", img: "images/items/day2/esp3/pet_choose_7.png", bg: "images/bg/yellow-bg.png" }
             ]
-         }
-      ],
-      costs: {
-         pack1: { cost: "8400", value: "4900" },
-         pack2: { cost: "9600", value: "5200" },
-         pack3: { cost: "15934", value: "8600" },
-         total: { cost: "31934", value: "18700" }
-      }
+         },
+      ]
    },
    // Day 3
    {
@@ -140,7 +128,7 @@ window.eventData = [
             rewards: [
                { name: "Gem", count: "x 500", img: "images/items/day3/esp2/Currency_Diamond.png", bg: "images/bg/purple-bg.png" },
                { name: "Pet", count: "x 2", img: "images/items/day3/esp2/pet_choose_7.png", bg: "images/bg/yellow-bg.png" },
-               { name: "Frag", count: "x 10", img: "images/items/day3/esp2/Frag_20.png", bg: "images/bg/yellow-bg.png" },
+               { name: "Frag", count: "x 10", img: "images/items/day3/esp2/Frag_20.png", bg: "images/bg/yellow-bg.png" }
             ]
          },
          {
@@ -157,13 +145,7 @@ window.eventData = [
                { name: "Pet", count: "x 2", img: "images/items/day3/esp3/pet_choose_7.png", bg: "images/bg/yellow-bg.png" }
             ]
          }
-      ],
-      costs: {
-         pack1: { cost: "6667", value: "4800" },
-         pack2: { cost: "10200", value: "7400" },
-         pack3: { cost: "17867", value: "23600" },
-         total: { cost: "34734", value: "35800" }
-      }
+      ]
    },
    // Day 4
    {
@@ -211,13 +193,7 @@ window.eventData = [
                { name: "Frag_20", count: "x 25", img: "images/items/day4/esp2/Frag_20.png", bg: "images/bg/yellow-bg.png" }
             ]
          }
-      ],
-      costs: {
-         pack1: { cost: "8400", value: "6900" },
-         pack2: { cost: "12134", value: "7400" },
-         pack3: { cost: "19934", value: "25450" },
-         total: { cost: "40468", value: "39750" }
-      }
+      ]
    },
    // Day 5
    {
@@ -268,13 +244,7 @@ window.eventData = [
                { name: "Frag_20", count: "x 40", img: "images/items/day5/esp3/Frag_20.png", bg: "images/bg/yellow-bg.png" }
             ]
          }
-      ],
-      costs: {
-         pack1: { cost: "8934", value: "12500" },
-         pack2: { cost: "14134", value: "12700" },
-         pack3: { cost: "23200", value: "29200" },
-         total: { cost: "46268", value: "54400" }
-      }
+      ]
    },
    // Remainder of 4 days 15 hours is likely covered by these chunks roughly or logic can adjust
    // Day 1 (15h) + Day 2 (24h) + Day 3 (24h) + Day 4 (24h) + Day 5 (leftover?)
