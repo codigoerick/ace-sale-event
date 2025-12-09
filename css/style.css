@@ -3,12 +3,17 @@ body {
    background-color: #121212;
    /* Dark background */
    display: flex;
+   flex-direction: column;
+   /* Stack vertically */
    justify-content: center;
    align-items: center;
-   height: 100vh;
+   min-height: 100vh;
+   /* Allow scroll if content is tall */
    margin: 0;
    color: #e0e0e0;
    /* Light text */
+   box-sizing: border-box;
+   /* Include padding in dimensions */
 }
 
 .card {
