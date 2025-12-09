@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const currentOrders = eventData[selectedPeriodIndex].orders;
 
       if (currentOrders && currentOrders[orderIndex]) {
-         const rewards = currentOrders[orderIndex].rewards;
+         const order = currentOrders[orderIndex];
+         const rewards = order.rewards;
          rewardsContainer.innerHTML = '';
 
          if (rewards) {
@@ -45,6 +46,35 @@ document.addEventListener('DOMContentLoaded', () => {
                rewardsContainer.appendChild(rewardEl);
             });
          }
+
+         // Handle Cost/Value Display
+         let costContainer = document.getElementById('orderCosts');
+         if (!costContainer) {
+            costContainer = document.createElement('div');
+            costContainer.id = 'orderCosts';
+            costContainer.className = 'order-costs';
+            rewardsContainer.parentNode.appendChild(costContainer);
+         }
+
+         // Gem Icon Path (assuming generic diamond usage)
+         const gemIcon = "images/items/day1/esp3/Currency_Diamond.png";
+
+         costContainer.innerHTML = `
+            <div class="cost-item">
+               <span class="cost-label">Coste:</span>
+               <div class="cost-value-wrapper">
+                  <img src="${gemIcon}" class="icon-img-small" alt="Gem">
+                  <span>${order.cost || '-'}</span>
+               </div>
+            </div>
+            <div class="cost-item">
+               <span class="cost-label">Valor:</span>
+               <div class="cost-value-wrapper">
+                  <img src="${gemIcon}" class="icon-img-small" alt="Gem">
+                  <span>${order.value || '-'}</span>
+               </div>
+            </div>
+         `;
       }
    }
 

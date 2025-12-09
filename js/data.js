@@ -15,7 +15,9 @@ window.eventData = [
             rewards: [
                { name: "Collection", count: "x 1", img: "images/items/day1/esp1/collection_choose_7.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet Key", count: "x10", img: "images/items/day1/esp1/PetKeyLarge.png", bg: "images/bg/purple-bg.png" }
-            ]
+            ],
+            cost: "3800",
+            value: "4100"
          },
          // Pedido 2
          {
@@ -29,7 +31,9 @@ window.eventData = [
                { name: "Gem", count: "x 500", img: "images/items/day1/esp2/Currency_Diamond.png", bg: "images/bg/purple-bg.png" },
                { name: "Frag", count: "x 10", img: "images/items/day1/esp2/Frag_20.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet", count: "x 1", img: "images/items/day1/esp2/pet_drop_0.png", bg: "images/bg/yellow-bg.png" }
-            ]
+            ],
+            cost: "5934",
+            value: "5100"
          },
          // Pedido 3
          {
@@ -44,7 +48,9 @@ window.eventData = [
                { name: "Gem", count: "x 1000", img: "images/items/day1/esp3/Currency_Diamond.png", bg: "images/bg/purple-bg.png" },
                { name: "Frag", count: "x 15", img: "images/items/day1/esp3/Frag_12.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet", count: "x 1", img: "images/items/day1/esp3/pet_choose_7.png", bg: "images/bg/yellow-bg.png" }
-            ]
+            ],
+            cost: "9600",
+            value: "6950"
          }
       ]
    },
@@ -64,7 +70,9 @@ window.eventData = [
                { name: "Collection", count: "x 1", img: "images/items/day2/esp1/collection_choose_7.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet Key", count: "x 10", img: "images/items/day2/esp1/PetKeyLarge.png", bg: "images/bg/purple-bg.png" },
                { name: "Pet Toy", count: "x 5", img: "images/items/day2/esp1/PetToy_choose_7.png", bg: "images/bg/yellow-bg.png" }
-            ]
+            ],
+            cost: "8400",
+            value: "4900"
          },
          {
             title: "Esp. pedido 2",
@@ -79,7 +87,9 @@ window.eventData = [
                { name: "Gem", count: "x 500", img: "images/items/day2/esp2/Currency_Diamond.png", bg: "images/bg/purple-bg.png" },
                { name: "Frag", count: "x 10", img: "images/items/day2/esp2/Frag_20.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet", count: "x 1", img: "images/items/day2/esp2/pet_choose_7.png", bg: "images/bg/yellow-bg.png" }
-            ]
+            ],
+            cost: "9600",
+            value: "5200"
          },
          {
             title: "Esp. pedido 3",
@@ -93,7 +103,9 @@ window.eventData = [
                { name: "Gem", count: "x 2000", img: "images/items/day2/esp3/Currency_Diamond.png", bg: "images/bg/purple-bg.png" },
                { name: "Frag", count: "x 1", img: "images/items/day2/esp3/selectBox_petAwaken.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet", count: "x 1", img: "images/items/day2/esp3/pet_choose_7.png", bg: "images/bg/yellow-bg.png" }
-            ]
+            ],
+            cost: "15934",
+            value: "8600"
          },
       ]
    },
@@ -115,7 +127,9 @@ window.eventData = [
                { name: "Pet_choose_7", count: "x 1", img: "images/items/day3/esp1/pet_choose_7.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet_key", count: "x 10", img: "images/items/day3/esp1/PetKeyLarge.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet_toys", count: "x 10", img: "images/items/day3/esp1/PetToy_choose_7.png", bg: "images/bg/yellow-bg.png" },
-            ]
+            ],
+            cost: "6667",
+            value: "4800"
          },
          {
             title: "Esp. pedido 2",
@@ -129,7 +143,9 @@ window.eventData = [
                { name: "Gem", count: "x 500", img: "images/items/day3/esp2/Currency_Diamond.png", bg: "images/bg/purple-bg.png" },
                { name: "Pet", count: "x 2", img: "images/items/day3/esp2/pet_choose_7.png", bg: "images/bg/yellow-bg.png" },
                { name: "Frag", count: "x 10", img: "images/items/day3/esp2/Frag_20.png", bg: "images/bg/yellow-bg.png" }
-            ]
+            ],
+            cost: "10200",
+            value: "7400"
          },
          {
             title: "Esp. pedido 3",
@@ -143,7 +159,9 @@ window.eventData = [
                { name: "Gem", count: "x 2000", img: "images/items/day3/esp3/Currency_Diamond.png", bg: "images/bg/purple-bg.png" },
                { name: "SelectBox", count: "x 1", img: "images/items/day3/esp3/HeroPetselectBox.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet", count: "x 2", img: "images/items/day3/esp3/pet_choose_7.png", bg: "images/bg/yellow-bg.png" }
-            ]
+            ],
+            cost: "17867",
+            value: "23600"
          }
       ]
    },
@@ -163,7 +181,9 @@ window.eventData = [
                { name: "Choose_Pet", count: "x 2", img: "images/items/day4/esp1/pet_choose_7.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet_key", count: "x 10", img: "images/items/day4/esp1/PetKeyLarge.png", bg: "images/bg/purple-bg.png" },
                { name: "Frag", count: "x 10", img: "images/items/day4/esp1/CollectionKey.png", bg: "images/bg/purple-bg.png" }
-            ]
+            ],
+            cost: "8400",
+            value: "6900"
          },
          {
             title: "Esp. pedido 2",
@@ -177,7 +197,9 @@ window.eventData = [
                { name: "Gem", count: "x 500", img: "images/items/day4/esp2/Currency_Diamond.png", bg: "images/bg/purple-bg.png" },
                { name: "Frag", count: "x 10", img: "images/items/day4/esp2/Frag_20.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet_Choose_7", count: "x 2", img: "images/items/day4/esp2/pet_choose_7.png", bg: "images/bg/yellow-bg.png" }
-            ]
+            ],
+            cost: "12134",
+            value: "7400"
          },
          {
             title: "Esp. pedido 3",
@@ -191,7 +213,9 @@ window.eventData = [
                { name: "Gem", count: "x 2000", img: "images/items/day4/esp3/Currency_Diamond.png", bg: "images/bg/purple-bg.png" },
                { name: "SelectBox", count: "x 1", img: "images/items/day4/esp3/HeroPetselectBox.png", bg: "images/bg/yellow-bg.png" },
                { name: "Frag_20", count: "x 25", img: "images/items/day4/esp2/Frag_20.png", bg: "images/bg/yellow-bg.png" }
-            ]
+            ],
+            cost: "19934",
+            value: "25450"
          }
       ]
    },
@@ -212,7 +236,9 @@ window.eventData = [
                { name: "Frag_20", count: "x 40", img: "images/items/day5/esp1/Frag_20.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet_key", count: "x 10", img: "images/items/day5/esp1/PetKeyLarge.png", bg: "images/bg/purple-bg.png" },
                { name: "Frag", count: "x 10", img: "images/items/day5/esp1/CollectionKey.png", bg: "images/bg/purple-bg.png" }
-            ]
+            ],
+            cost: "8934",
+            value: "12500"
          },
          {
             title: "Esp. pedido 2",
@@ -227,7 +253,9 @@ window.eventData = [
                { name: "Gem", count: "x 500", img: "images/items/day5/esp2/Currency_Diamond.png", bg: "images/bg/purple-bg.png" },
                { name: "Frag", count: "x 40", img: "images/items/day5/esp2/Frag_20.png", bg: "images/bg/yellow-bg.png" },
                { name: "Pet_Choose_7", count: "x 1", img: "images/items/day5/esp2/pet_choose_7.png", bg: "images/bg/yellow-bg.png" }
-            ]
+            ],
+            cost: "14134",
+            value: "12700"
          },
          {
             title: "Esp. pedido 3",
@@ -242,7 +270,9 @@ window.eventData = [
                { name: "Gem", count: "x 2000", img: "images/items/day5/esp3/Currency_Diamond.png", bg: "images/bg/purple-bg.png" },
                { name: "Senior_box", count: "x 1", img: "images/items/day5/esp3/seniorselectBox1.png", bg: "images/bg/yellow-bg.png" },
                { name: "Frag_20", count: "x 40", img: "images/items/day5/esp3/Frag_20.png", bg: "images/bg/yellow-bg.png" }
-            ]
+            ],
+            cost: "23200",
+            value: "29200"
          }
       ]
    },
