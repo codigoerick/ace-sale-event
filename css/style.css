@@ -558,46 +558,45 @@ body {
    margin: 0;
    display: flex;
    align-items: center;
-
-   /* Mobile Calculator Styles */
-   @media (max-width: 600px) {
-      .calculator-grid {
-         display: grid;
-         grid-template-columns: repeat(4, 1fr);
-         gap: 5px;
-      }
-
-      .calc-item {
-         width: auto;
-         padding: 8px 4px;
-         gap: 5px;
-      }
-
-      .calc-item>img {
-         width: 30px;
-         height: 30px;
-      }
-
-      .calc-input {
-         width: 90%;
-         padding: 4px;
-         font-size: 0.8em;
-      }
-
-      .calc-result {
-         font-size: 0.75em;
-         justify-content: center;
-      }
-
-      .gem-icon-small {
-         width: 14px;
-         height: 14px;
-      }
-   }
-
    justify-content: center;
    font-size: 1.4em;
    color: #ffffff;
+}
+
+/* Mobile Calculator Styles */
+@media (max-width: 600px) {
+   .calculator-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+   }
+
+   .calc-item {
+      width: auto;
+      padding: 8px 4px;
+      gap: 5px;
+   }
+
+   .calc-item>img {
+      width: 30px;
+      height: 30px;
+   }
+
+   .calc-input {
+      width: 90%;
+      padding: 4px;
+      font-size: 0.8em;
+   }
+
+   .calc-result {
+      font-size: 0.75em;
+      justify-content: center;
+   }
+
+   .gem-icon-small {
+      width: 14px;
+      height: 14px;
+   }
 }
 
 #grandTotal {
