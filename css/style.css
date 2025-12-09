@@ -459,3 +459,111 @@ body {
    width: 100%;
    padding-bottom: 20px;
 }
+
+/* Calculator Styles */
+.calculator-card {
+   margin-top: 30px;
+   /* Add spacing from the main card */
+   margin-bottom: 30px;
+}
+
+.calculator-grid {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+
+.calc-item {
+   background-color: #2c2c2c;
+   padding: 15px;
+   border-radius: 12px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   width: 120px;
+   /* Fixed width for consistency */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.calc-item img {
+   width: 50px;
+   height: 50px;
+   object-fit: contain;
+}
+
+.input-group {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   gap: 5px;
+}
+
+.calc-input {
+   width: 80%;
+   padding: 8px;
+   border-radius: 8px;
+   border: 1px solid #444;
+   background-color: #383838;
+   color: white;
+   text-align: center;
+   font-size: 1em;
+   font-weight: bold;
+}
+
+.calc-input:focus {
+   outline: none;
+   border-color: #ff9800;
+   background-color: #444;
+}
+
+.calc-result {
+   font-size: 0.9em;
+   color: #ffca28;
+   /* Gold color */
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   font-weight: bold;
+   min-height: 20px;
+}
+
+.gem-icon-small {
+   width: 16px;
+   height: 16px;
+   object-fit: contain;
+}
+
+.gem-icon-medium {
+   width: 24px;
+   height: 24px;
+   object-fit: contain;
+   margin-left: 5px;
+}
+
+.total-section {
+   background-color: #2c2c2c;
+   padding: 15px;
+   border-radius: 12px;
+   border: 1px solid #444;
+   display: inline-block;
+   /* Fit content */
+   min-width: 200px;
+}
+
+.total-section h3 {
+   margin: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.4em;
+   color: #ffffff;
+}
+
+#grandTotal {
+   color: #ffca28;
+   margin-left: 10px;
+}

@@ -275,4 +275,48 @@ document.addEventListener('DOMContentLoaded', () => {
    // Initialize
    selectDay(currentRealPeriodIndex); // Start viewing current day
    startTimer();
+
+   // --- Calculator Logic ---
+   // Costs per unit (gems)
+   const materialCosts = {
+      1: 7, // Confirmed: 7 gems per unit
+      2: 20, // Placeholder
+      3: 7, // Placeholder
+      4: 27, // Placeholder
+      5: 14, // Placeholder
+      6: 7, // Placeholder
+      7: 20, // Placeholder
+      8: 27, // Placeholder
+      9: 14, // Placeholder
+      10: 80, // Placeholder
+      11: 160 // Placeholder
+   };
+
+   const calcInputs = document.querySelectorAll('.calc-input');
+   const grandTotalEl = document.getElementById('grandTotal');
+
+   function updateCalculator() {
+      let total = 0;
+      calcInputs.forEach(input => {
+         const materialId = input.getAttribute('data-material');
+         const count = parseInt(input.value) || 0;
+         const costPerUnit = materialCosts[materialId] || 0;
+         const itemTotal = count * costPerUnit;
+
+         // Update individual item total display
+         const resultSpan = document.getElementById(`res-${materialId}`);
+         if (resultSpan) {
+            const iconHtml = `<img src="images/items/day1/esp3/Currency_Diamond.png" class="gem-icon-small">`;
+            resultSpan.innerHTML = `${itemTotal} ${iconHtml}`;
+         }
+
+         total += itemTotal;
+      });
+
+      grandTotalEl.textContent = total;
+   }
+
+   calcInputs.forEach(input => {
+      input.addEventListener('input', updateCalculator);
+   });
 });
