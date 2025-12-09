@@ -319,4 +319,17 @@ document.addEventListener('DOMContentLoaded', () => {
    calcInputs.forEach(input => {
       input.addEventListener('input', updateCalculator);
    });
+
+   // Reset Calculator Button
+   const resetBtn = document.getElementById('resetCalculator');
+   if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+         // Clear all input fields
+         calcInputs.forEach(input => {
+            input.value = '';
+         });
+         // Update calculator to reset all totals
+         updateCalculator();
+      });
+   }
 });

@@ -563,6 +563,36 @@ body {
    color: #ffffff;
 }
 
+.reset-section {
+   margin-top: 15px;
+   display: flex;
+   justify-content: center;
+}
+
+.reset-btn {
+   background-color: #ff5722;
+   color: white;
+   border: none;
+   padding: 12px 24px;
+   border-radius: 8px;
+   font-size: 1em;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.reset-btn:hover {
+   background-color: #e64a19;
+   box-shadow: 0 4px 8px rgba(255, 87, 34, 0.4);
+   transform: translateY(-2px);
+}
+
+.reset-btn:active {
+   transform: translateY(0);
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 /* Mobile Calculator Styles */
 @media (max-width: 600px) {
    .calculator-grid {
